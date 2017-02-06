@@ -16,8 +16,8 @@ LOCAL_SRC_FILES := source/SoundTouch/AAFilter.cpp \
 		source/SoundTouch/InterpolateCubic.cpp \
 		source/SoundTouch/InterpolateShannon.cpp
 
-#include stlport headers
-include external/stlport/libstlport.mk
+LOCAL_SDK_VERSION := 9
+LOCAL_NDK_STL_VARIANT := stlport_static
 
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/include
 LOCAL_LDLIBS	+= -llog
